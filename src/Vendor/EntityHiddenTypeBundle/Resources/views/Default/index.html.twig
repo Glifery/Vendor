@@ -1,1 +1,5 @@
-Hello {{ name }}!
+<p>{{ form(form) }}</p>
+{% if newEntity is not null %}
+    <p>Submitted entity:</p>
+    {{ dump(newEntity) }}
+{% endif %}
