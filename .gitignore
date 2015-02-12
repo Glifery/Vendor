@@ -14,3 +14,6 @@
 /bin/
 /composer.phar
 /src/Glifery/
+
+composer.json
+composer.lock

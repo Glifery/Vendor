@@ -1,7 +1,4 @@
-glifery_entity_hidden_type:
-    resource: "@GliferyEntityHiddenTypeBundle/Resources/config/routing.yml"
-    prefix:   /
+vendor_entity_hidden_type:
+    resource: "@VendorEntityHiddenTypeBundle/Resources/config/routing.yml"
+    prefix:   /entity_hidden_type
 
-app:
-    resource: @AppBundle/Controller/
-    type:     annotation
