@@ -1,5 +1,8 @@
+<p>To test Entity Hidden Type click Save button</p>
 <p>{{ form(form) }}</p>
+<p>After that you have to see dump of entity witch name you have seen above</p>
 {% if newEntity is not null %}
-    <p>Submitted entity:</p>
+    <br/>
+    <p>Seems like is's OK. Entity dump:</p>
     {{ dump(newEntity) }}
 {% endif %}
