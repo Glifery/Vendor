@@ -1,0 +1,4 @@
+services:
+#    vendor_upload_handler.example:
+#        class: Vendor\UploadHandlerBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

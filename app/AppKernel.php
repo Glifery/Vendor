@@ -18,7 +18,10 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
 
+            new Liip\ImagineBundle\LiipImagineBundle(),
+
             new Vendor\EntityHiddenTypeBundle\VendorEntityHiddenTypeBundle(),
+            new Vendor\UploadHandlerBundle\VendorUploadHandlerBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
@@ -30,6 +33,7 @@ class AppKernel extends Kernel
 
         if (in_array($this->getEnvironment(), array('dev'))) {
             $bundles[] = new Glifery\EntityHiddenTypeBundle\GliferyEntityHiddenTypeBundle();
+            $bundles[] = new SymfonyArt\UploadHandlerBundle\UploadHandlerBundle();
         }
 
         return $bundles;
