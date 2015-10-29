@@ -27,7 +27,7 @@ class Entity
     private $name;
 
     /**
-     * @Image("filePath", filter="small")
+     * @Image("filePath", filter="post_thumbnail")
      */
     private $file;
 

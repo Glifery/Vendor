@@ -28,7 +28,5 @@ class TestCommand extends ContainerAwareCommand
         $em = $this->getContainer()->get('doctrine.orm.entity_manager');
         $em->persist($entity);
         $em->flush();
-
-        $repo = $em->getRepository('VendorUploadHandlerBundle:Entity');
     }
 }

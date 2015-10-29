@@ -1,1 +1,8 @@
-Hello {{ name }}!
+<div>111</div>
+{{ form(form) }}
+<div>222</div>
+<div>Status: {{ status }}</div>
+{% if entity.filePath != null %}
+    <img src="{{ entity.filePath }}" alt=""/>
+{% endif %}
+{{ dump(entity) }}

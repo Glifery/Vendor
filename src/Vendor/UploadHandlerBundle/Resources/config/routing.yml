@@ -1,3 +1,3 @@
 vendor_upload_handler_homepage:
-    path:     /hello/{name}
+    path:     /
     defaults: { _controller: VendorUploadHandlerBundle:Default:index }

@@ -1,6 +1,6 @@
 vendor_upload_handler:
     resource: "@VendorUploadHandlerBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /upload_handler
 
 vendor_entity_hidden_type:
     resource: "@VendorEntityHiddenTypeBundle/Resources/config/routing.yml"
