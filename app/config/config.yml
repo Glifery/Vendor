@@ -77,3 +77,19 @@ liip_imagine:
         post_thumbnail:
             filters:
                 thumbnail: { size: [32, 32], mode: outbound }
+
+glifery_vk_oauth_token:
+    app_key: 4617137
+    app_secret: wjv0oh8UWSJVHpbSSqLG
+    app_scope:
+        - friends
+        - photos
+        - audio
+        - video
+        - docs
+        - status
+        - email
+        - notifications
+        - stats
+        - offline
+    token_table: oauth_token

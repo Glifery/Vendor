@@ -33,6 +33,8 @@ class AppKernel extends Kernel
 
         if (in_array($this->getEnvironment(), array('dev'))) {
             $bundles[] = new Glifery\EntityHiddenTypeBundle\GliferyEntityHiddenTypeBundle();
+            $bundles[] = new Glifery\VkOAuthTokenBundle\GliferyVkOAuthTokenBundle();
+            $bundles[] = new Glifery\VkApiBundle\GliferyVkApiBundle();
             $bundles[] = new SymfonyArt\UploadHandlerBundle\UploadHandlerBundle();
         }
 
