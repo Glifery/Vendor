@@ -38,6 +38,12 @@ class Entity
     private $filePath;
 
     /**
+     * @var \DateTime
+     * @ORM\Column(type="datetime", nullable=true)
+     */
+    private $date;
+
+    /**
      * @return int
      */
     public function getId()
@@ -103,6 +109,25 @@ class Entity
     public function setFilePath($filePath)
     {
         $this->filePath = $filePath;
+
+        return $this;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getDate()
+    {
+        return $this->date;
+    }
+
+    /**
+     * @param \DateTime $date
+     * @return $this
+     */
+    public function setDate($date)
+    {
+        $this->date = $date;
 
         return $this;
     }

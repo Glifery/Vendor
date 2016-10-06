@@ -14,9 +14,11 @@ class DefaultController extends Controller
         $status = '---';
 
         $entity = new Entity();
+        $entity = $this->get('doctrine.orm.entity_manager')->getRepository('VendorUploadHandlerBundle:Entity')->find(14);
         $form = $this->createFormBuilder($entity)
             ->add('name')
             ->add('file', 'file')
+            ->add('date', 'datetime')
             ->add('save', 'submit')
             ->getForm()
         ;
